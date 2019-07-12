@@ -1,0 +1,42 @@
+- Array
+	- Map
+	const numbers = [35, 23, 17, 21]
+	const result = numbers.map((number) => {
+  		return number*2
+	})
+	console.log(result) // [70, 46, 24, 42]
+
+	-Filter
+	const numbers = [35, 23, 17, 21, 35]
+	const result = filter(number => number == 35)
+	console.log(result) // [35, 35]
+
+	-Find
+	const numbers = [35, 23, 17, 21, 35]
+	const result = find(number => number == 35)
+	console.log(result) // 35
+
+	-Every & Some
+	const numbers = [35, 23, 17, 21, 35]
+	const result = every(number => number == 35)
+	console.log(result) // false
+	const result = some(number => number == 35)
+	console.log(result) // true
+
+	-Reduce
+	const numbers = [10, 20, 30, 40]
+	const result = numbers.reduce((sum,number) => {
+  		return sum+number
+	}, 0)
+	console.log(result) // 100
+
+- if() return
+	- false, 0, null, NaN, undifined
+
+- Convert
+	- To string
+		const val = String(input)
+		const val = input + '' good perfomance
+	- To int
+		const val = Number(input)
+		const val = input >> 0 (bitshift 32 bit but number has 64 bit, Max is 2147483647) good perfomance
