@@ -29,6 +29,15 @@
   		return sum+number
 	}, 0)
 	console.log(result) // 100
+	
+	- Set to empty
+		let sampleArray = ['foo', 'bar', 'zeta'];
+		sampleArray.length = 0; // sampleArray becomes []
+
+	- Use spread/rest operator
+		let first = ['foo', 'bar'];
+		let second = ['other foo', ...first, 'other bar'];
+		// ['other foo', 'foo', 'bar', 'other bar'
 
 - if() return
 	- false, 0, null, NaN, undifined
@@ -40,3 +49,8 @@
 	- To int
 		const val = Number(input)
 		const val = input >> 0 (bitshift 32 bit but number has 64 bit, Max is 2147483647) good perfomance
+- Declear
+	- use let or cons instead var
+	- Use && and || (let a = '' || 'foo'; // 'foo', let b = undefined || 'foo'; // 'foo')
+- Compare
+	- use === instead ==
