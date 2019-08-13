@@ -1,0 +1,12 @@
+1. Use join (LEFT, INNER) instead NOT IN
+2. Insert or Update more one rows, use table type instead for loop in C#
+	- INSERT INTO (id, name, ...)
+	  SELECT id, name, ... FROM tb
+	- UPDATE SET ...
+	  FROM tb
+3. When join table ON condition must be INDEX (Primary Key is index), very slow if not
+3. Use Temp table
+	- DROP TABLE IF EXISTS #temp;
+	  SELECT Id
+		INTO #temp  
+		FROM dbo.tb tb
