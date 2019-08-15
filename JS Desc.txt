@@ -54,3 +54,10 @@
 	- Use && and || (let a = '' || 'foo'; // 'foo', let b = undefined || 'foo'; // 'foo')
 - Compare
 	- use === instead ==
+- Regular Expression
+	- Password pattern matching
+		let re = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*\W).{8,}$/g // Contain a-z, A_Z, Number, at least, 8 characters
+	- Smart Character Replacement
+		let camelRE = /([A-Z])/g
+		let phrase = "thisIsACamelCaseString"
+		console.log(phrase.replace(camelRE, " $1")// this Is A Camel Case String
