@@ -49,6 +49,9 @@
 	- To int
 		const val = Number(input)
 		const val = input >> 0 (bitshift 32 bit but number has 64 bit, Max is 2147483647) good perfomance
+		const num1 = +"100"; // converts to int data type
+	- To float
+		const num2 = +"100.01"; // converts to float data type
 - Declear
 	- use let or cons instead var
 	- Use && and || (let a = '' || 'foo'; // 'foo', let b = undefined || 'foo'; // 'foo')
